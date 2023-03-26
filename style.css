@@ -31,8 +31,7 @@ body {
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
     background-color: var(--body-bg);
-   
-  background-image: linear-gradient(180deg, red, blue);
+        background-image: linear-gradient(to bottom right, #de4e4e , #1d4ed8);
     color: var(--text1);
     font-size: var(--fs-18);
     line-height: 1.56;
@@ -44,6 +43,7 @@ nav {
     top: 0;
     width: 100%;
     background-color: #151515;
+            background-image: linear-gradient(to bottom right, #885256 , #435a9d);
     z-index: 10;
     border-bottom: 1px solid var(--contact-bg);
     /* height: 4rem; */

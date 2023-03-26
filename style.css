@@ -101,8 +101,8 @@ nav ul a:hover {
 
 
 media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+  .nav-logo a:not(:first-child) {display: none;}
+  .nav-logo a.icon {
     float: right;
     display: block;
   }

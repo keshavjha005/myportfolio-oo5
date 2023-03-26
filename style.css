@@ -31,6 +31,8 @@ body {
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
     background-color: var(--body-bg);
+   
+  background-image: linear-gradient(180deg, red, blue);
     color: var(--text1);
     font-size: var(--fs-18);
     line-height: 1.56;

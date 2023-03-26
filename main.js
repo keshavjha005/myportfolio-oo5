@@ -18,6 +18,16 @@ for (var i = 0; i < navLinks.length; i++) {
     });
 }
 
+function myFunction() {
+  var x = document.getElementById("my nav-logo");
+  if (x.className === "nav-logo") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-logo";
+  }
+}
+
+
 //hamburger menu
 var x = document.querySelector("nav ul");
 var y = document.querySelector(".hamburger");

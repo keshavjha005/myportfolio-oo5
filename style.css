@@ -382,14 +382,13 @@ media screen and (max-width: 600px) {
 
     @keyframes updown {
         0% {
-            transform: translateY(-3rem);
+            transform: translateY(-8rem);
         }
 
         100% {
-            transform: translateY(-2.5rem);
+            transform: translateY(-7.5rem);
         }
-    }
-}
+    
 
 .scroll-sign .scroll:hover {
     cursor: default;

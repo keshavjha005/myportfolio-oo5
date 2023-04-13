@@ -27,6 +27,27 @@ html {
     box-sizing: inherit;
 }
 
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--body-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4ee19fb1;
+    border-radius: 0.2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4ee19fe9
+}
+
 body {
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
@@ -95,57 +116,6 @@ nav ul a:hover {
     color: var(--accent);
 }
 
-.nav-logo .icon {
-  display: none;
-}
-
-
-media screen and (max-width: 600px) {
-  .nav-logo a:not(:first-child) {display: none;}
-  .nav-logo a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .nav-logo.responsive {position: relative;}
-  .nav-logo.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav-logo.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-nav ul .resume {
-    font-size: 1.2rem;
-    padding: 0.4em 0.7em;
-    color: var(--accent);
-    border: 2px solid var(--accent);
-    border-radius: 0.5em;
-    position: fixed;
-    right: 1rem;
-    top: 0.5rem;
-}
-
-nav ul .resume:hover {
-    background-color: var(--accent);
-    color: var(--text1);
-    transition: 0.5s ease;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-nav ul .resume:focus {
-    text-decoration: none;
-}
-
 nav li {
     display: inline-block;
     font-size: 1.3rem;
@@ -156,6 +126,13 @@ nav li {
 nav ul li a.active {
     text-decoration: var(--accent) underline;
 }
+
+
+media screen and (max-width: 600px) {
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
 
 /* hamburger */
 .hamburger {
@@ -242,6 +219,10 @@ nav ul li a.active {
     }
 }
 
+    @media only screen and (max-width: 1500px) {
+    .nav-logo {
+        display: flex;
+    }
 /* main */
 
 .header {
